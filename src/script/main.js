@@ -79,8 +79,8 @@ const createStudentComponent = (name, subject, info, grade) => {
     return `
         <div class="student">
             <h1 class="${grade}">${name}</h1>
-            <section>${subject}</section>
-            <aside>${info}</aside>
+            <section class= "bordered dashed section--padded">${subject}</section>
+            <aside class="pushRight">${info}</aside>
         </div>
     `;
 };
@@ -108,6 +108,17 @@ for (let i = 0; i < students.length; i++) {
 }
 
 
+// const passing = {
+//     <div class="student">
+//     <h1 class="xx-large passing">Student Name</h1>
+//     <section class="bordered dashed section--padded">Subject</section>
+//     <aside class="pushRight">Additional information</aside>
+// </div>
+// }
+
+// const failing = {
+
+// }
 
 // const studentContainer = document.querySelector("#container");
 
@@ -115,9 +126,9 @@ for (let i = 0; i < students.length; i++) {
 //     const student = students[i];
 //     let studentComponent;
 //     if (student.score >= 60) {
-//         studentComponent = "passing";
+//         studentComponent = (student)passing
 //     } else {
-//         studentComponent = "failing";
+//         studentComponent = (student)failing
 //     }
 //     studentContainer.innerHTML += createStudentComponent(
 //         student.name,
@@ -126,3 +137,5 @@ for (let i = 0; i < students.length; i++) {
 //         studentComponent
 //     );
 // }
+
+
